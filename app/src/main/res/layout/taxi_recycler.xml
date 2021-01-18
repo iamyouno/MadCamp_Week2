@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:layout_marginLeft="30dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="01/13"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/when_taxi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_gravity="left"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="140dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/location_taxi"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"/>
+
+        <TextView
+            android:id="@+id/person_taxi"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintTop_toBottomOf="@+id/location_taxi"
+            android:layout_marginTop="3dp"/>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/join_taxi"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/handsup"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        />
+
+
+</LinearLayout>
